@@ -1,1 +1,147 @@
-
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="Crsh_Icon_Inv.png" type="x-icon">
+    </head>
+    <title>Collegiate Crash: Your home for the collegiate competitive experience</title>
+    <body>
+        <div class="onloadpg">
+            <div class="menu" id="menu_">
+                <div class="menulogo" id="menulogo_">
+                    <a href="https://www.collegiatecrash.com" class="menuimglink" id="menuimglink_"><embed src ="Crsh.svg" class="menuimg" id="menuimg_" style="filter: invert(100%) sepia(0%) saturate(7%) hue-rotate(132deg) brightness(103%) contrast(103%); pointer-events: none;"></a>
+                </div>
+                <div class="sidemenu" id="sidemenu_">
+                    <div onclick="sidemenushow()" style="background-color: #e6e6e6; position: absolute; width: min(3.1cm, 17vw); height: min(3.1cm, 17vw); top: 0%; right: 0%;">
+                    </div>
+                    <div class="sidemenumainelements" id="sidemenumainelements_">
+                        <div class="menuelements" id="menuelements_">
+                            <a href="https://m.collegiatecrash.com/news/" class="select" id="menu_1" style="padding-left: 8px;">NEWS</a>
+                            <a href="https://m.collegiatecrash.com/schedule/" class="select" id="2menu_">SCHEDULE</a>
+                            <a href="https://www.collegiatecrash.com/support/" class="select" id="3menu_">SUPPORT</a>
+                            <a href="https://www.collegiatecrash.com/socials/" class="select" id="4menu_">OUR SOCIALS</a>
+                            <a href="https://m.collegiatecrash.com/watch_now/" class="select" id="5menu_">WATCH</a>
+                            <a href="https://www.collegiatecrash.com/join/" class="select" id="sixmenu_">PLAY NOW >>></a>
+                        </div>
+                        <div class="additionalButtonsMenu">
+                            <a href="https://www.collegiatecrash.com/join/" class="a1_" id="a1__">
+                                <div class="additionalButtonsMenu1_">
+                                    <h2 style="margin: 0px;"><span>PLAY</span> NOW</h2>
+                                </div>
+                            </a>
+                            <a href="#RegionLanguageChange_" class="a2_" id="a2__">
+                                <div id="additionalButtonsMenu2__" class="additionalButtonsMenu2_" onclick="RegionLanguageChangeDrop()">
+                                    <p id="RegionButtonText" style="font-size: 10px; font-family: Arial, sans-serif; font-weight: bold; color: #e6e6e6; margin: 0px; position: absolute; padding-bottom: 16%; right: 18%; transform: rotate(180deg);">Δ</p>
+                                    <img src="GlobeIcon.svg" id="RegionButtonIcon" style="height: 75%; filter: invert(0.9); display:inline; padding-top: 5%; margin-left: -20%;">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="RegionLanguageChange_">
+                    </div>
+                    <script>
+                        var sidemenuclicked = false;
+                        function sidemenushow(){
+                            var sidemenus = document.getElementById("sidemenu_")
+                            var sidemenumainelementss = document.getElementById("sidemenumainelements_")
+                            if(sidemenuclicked == false){
+                                sidemenus.style.display = "block";
+                                sidemenus.style.transition = "ease 0.3s";
+                                sidemenus.style.backgroundColor = "rgba(46, 46, 46, .6)";
+                                sidemenumainelementss.style.transition = "ease 0.6s";
+                                sidemenumainelementss.style.marginRight = "0vw"
+                                sidemenuclicked = true;
+                            } else {
+                                sidemenumainelementss.style.marginRight = "-70vw"
+                                sidemenus.style.backgroundColor = "rgba(46, 46, 46, 0)";
+                                setTimeout(() => {
+                                    sidemenumainelementss.style.transition = null;
+                                    sidemenus.style.transition = null;
+                                    sidemenuclicked = false;
+                                }, "600");
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="mainContent" id="mainContent_" style="height: 1000px;">
+                <div style="height: 60vh; overflow: hidden;">
+                    <video autoplay muted loop src="INTRBACVID.mp4" class="vidmob" id="vidmob_"></video>
+                </div>
+                <script>
+                    var vidmobid = document.getElementById("vidmob_")
+                    setTimeout(() => {
+                        vidmobid.style.transition = "ease 0.5s";
+                    }, "1500");
+                    setTimeout(() => {
+                        vidmobid.style.opacity = "1";
+                        vidmobid.style.filter = "blur(0px)";
+                    }, "1600");
+                    setTimeout(() => {
+                        vidmobid.style.transition = "ease 0.5s";
+                    }, "11600");
+                </script>
+                <div style="position: absolute; top: 0px; text-align: center; width: 100vw; height: 69vh; max-height: 56.25vw;" class="mainContentText">
+                    <h1 style="margin-top: min(32vh, 32vw);">Welcome to Collegiate Crash</h1>
+                    <h2>We are currently updating this section. You may <a href="https://www.collegiatecrash.com/support/" style="text-decoration: none; color: lightgrey;">click here</a> for if you still may need help.</h2>
+                </div>
+                <div style="text-align: left; margin-left: 3vw;">
+                    <h1 style="margin-left: 1vw; font-size: 4em;">Who are we?</h1>
+                    <h2 style="color: lightgrey; margin-left: 1vw;">We at Collegiate Crash are trying to provide a platform to elavate collegiate athletics on a global scale step by step</h2>
+                </div>
+            </div>
+                <script>
+                    var onload_ = document.getElementById("preloadpg");
+                    onload_.style.transition = "ease 700ms";
+                    window.addEventListener("load", function(){
+                        setTimeout(function(){
+                            onload_.style.opacity='0';
+                        }, 400)
+                        setTimeout(function(){
+                            onload_.style.display="none";
+                        }, 1100)
+                    })
+                    const region_codes = ['JP','KR','ID','SG','MY','VN','TH'];
+                    const region_header = ['注意:このサイトは現在メンテナンス中です',
+                    '알림: 이 사이트는 현재 유지 관리 중입니다',
+                    'Perhatikan: Situs ini sedang dalam pemeliharaan']
+                    const region_footer = ['サイトは、この間、意図したとおりに機能しない可能性があります, 当面の間、ソーシャルメディアプラットフォームを自由に探索してください. あなたの忍耐は高く評価されます。',
+                    '이 사이트는 당분간 의도한 대로 작동하지 않을 수 있습니다. 당분간은 소셜 미디어 플랫폼을 자유롭게 탐색하십시오.양해해 주셔서 감사해요.',
+                    'Situs ini mungkin tidak berfungsi sebagaimana dimaksud untuk saat ini, jangan ragu untuk menjelajahi sosial kami untuk saat ini. Kesabaran Anda dihargai.']
+                    let user_region = '';
+                    let region_index = -1;
+                    fetch('http://ip-api.com/json/?fields=61439')
+                        .then(res => res.json())
+                        .then(res => {
+                            user_region = res.countryCode;
+                            let len = region_codes.length;
+                            for (let x=0; x<len;x++){
+                                if (region_codes[x] == user_region){
+                                    region_index = x;
+                                }
+                            }
+                            if(region_index != -1){
+                                let ht = document.getElementById("n1");
+                                let ft = document.getElementById("n2");
+                                if (region_index < 3){
+                                    ht.textContent = region_header[region_index]
+                                    ft.textContent = region_footer[region_index]
+                                }
+                            }
+                        })
+                    
+                </script>
+            </div>
+            <div class="notice">
+                <h1 id="n1">Notice: This site is currently under maintenance</h1>
+                <p id="n2">The site may not work as intended for this while, feel free to explore <a href="https://www.collegiatecrash.com/socials/" style="text-decoration: none; color: #2e2e2e;">our socials</a> for the time being. Your patience is appreciated.</p>
+            </div>
+            <script>
+                var hone = document.getElementById('n1');
+                var htwo = document.getElementById('n2');
+                hone.style.transition = 'all 700ms';
+            </script>
+        </div>
+    </body>
+</html>
