@@ -1,0 +1,94 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #111111;
+}
+.menu{
+    height: 17vw;
+    max-height: 3.1cm;
+    background-color: #191919;
+}
+::selection{
+    background-color: #242424;
+    color: white;
+}
+.menuimg{
+    height: 10vw;
+    max-height: 2cm;
+}
+.menuimglink{
+    height: 10vw;
+    max-height: 2cm;
+    font-size: 10vw;
+}
+.menulogo{
+    position: absolute;
+    padding-top: min(0.6cm, 3vw);
+    left: 50%;
+    transform: translate(-55%, 0%);
+    height: 10vw;
+    max-height: 2cm;
+}
+.notice{
+    position: fixed;
+    width: 100vw;
+    background-color: #edaa00;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: smaller;
+    bottom: 0px;
+}
+.notice p{
+    color:#2e2e2e;
+    margin: 0px;
+    padding-left: 10vw;
+    padding-bottom: 25px;
+}
+.notice h1{
+    margin: 0px;
+    padding-left: 10vw;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+mark {
+    background-color: #191919;
+    color: #424242;
+}
+.mainContent{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    min-width: calc(900px - 4em);
+}
+.mainContent h1{
+    font-size: 4em;
+    color: white;
+    margin-bottom: 0px;
+}
+.mainContent h2{
+    padding-left: 0.5em;
+    font-size: 1em;
+    color: gray;
+    margin-top: 1em;
+    font-weight: normal;
+    padding-bottom: calc(50px + 10em);
+    margin-right: 2em;
+}
+@media screen and (max-width: 900px){
+    .mainContent{
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        margin-left: 2em;
+        transform: translate(0%, 0%);
+        min-width: 0px;
+    }
+}
+@media screen and (max-width: 600px){
+    .mainContent h1{
+        font-size: 4em;
+        color: white;
+        margin-bottom: 0px;
+        margin-top: 12px;
+    }
+}
