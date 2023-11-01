@@ -3,23 +3,28 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="Crsh_Icon_Inv.png" type="x-icon">
+        <link rel="icon" href="https://www.collegiatecrash.com/Crsh_Icon_Inv.png" type="x-icon">
     </head>
     <title>Collegiate Crash: Your home for the collegiate competitive experience</title>
     <body>
         <div class="onloadpg">
             <div class="menu" id="menu_">
                 <div class="menulogo" id="menulogo_">
-                    <a href="https://www.collegiatecrash.com" class="menuimglink" id="menuimglink_"><embed src ="Crsh.svg" class="menuimg" id="menuimg_" style="filter: invert(100%) sepia(0%) saturate(7%) hue-rotate(132deg) brightness(103%) contrast(103%); pointer-events: none;"></a>
+                    <a href="https://www.collegiatecrash.com" class="menuimglink" id="menuimglink_"><embed src ="https://www.collegiatecrash.com/Crsh.svg" class="menuimg" id="menuimg_" style="filter: invert(100%) sepia(0%) saturate(7%) hue-rotate(132deg) brightness(103%) contrast(103%); pointer-events: none;"></a>
                 </div>
                 <div class="sidemenu" id="sidemenu_">
-                    <div onclick="sidemenushow()" style="background-color: #e6e6e6; position: absolute; width: min(3.1cm, 17vw); height: min(3.1cm, 17vw); top: 0%; right: 0%;">
+                    <div onclick="sidemenushow()" style="background-color: rgba(25, 25, 25, 0); position: absolute; width: min(3.1cm, 17vw); height: min(3.1cm, 17vw); top: 0%; right: 0%;">
+                        <div class="sidemenulogo" id="sidemenulogo_" style="width: 100%; height: 100%;">
+                            <span style="width: 60%; height: 9%; background-color:#424242; display: block; top: 22%; left: 20%; position: absolute;" id="hmbrgrbarone"></span>
+                            <span style="width: 60%; height: 9%; background-color:#424242; display: block; top: 43%; left: 20%; position: absolute;" id="hmbrgrbartwo"></span>
+                            <span style="width: 60%; height: 9%; background-color:#424242; display: block; top: 64%; left: 20%; position: absolute;" id="hmbrgrbarthree"></span>
+                        </div>
                     </div>
                     <div class="sidemenumainelements" id="sidemenumainelements_">
                         <div class="menuelements" id="menuelements_">
-                            <a href="https://m.collegiatecrash.com/news/" class="select" id="menu_1" style="padding-left: 8px;">NEWS</a>
+                            <a href="https://m.collegiatecrash.com/news/" class="select" id="menu_1">NEWS</a>
                             <a href="https://m.collegiatecrash.com/schedule/" class="select" id="2menu_">SCHEDULE</a>
-                            <a href="https://www.collegiatecrash.com/support/" class="select" id="3menu_">SUPPORT</a>
+                            <a href="https://m.collegiatecrash.com/support/" class="select" id="3menu_">SUPPORT</a>
                             <a href="https://www.collegiatecrash.com/socials/" class="select" id="4menu_">OUR SOCIALS</a>
                             <a href="https://m.collegiatecrash.com/watch_now/" class="select" id="5menu_">WATCH</a>
                             <a href="https://www.collegiatecrash.com/join/" class="select" id="sixmenu_">PLAY NOW >>></a>
@@ -45,20 +50,57 @@
                         function sidemenushow(){
                             var sidemenus = document.getElementById("sidemenu_")
                             var sidemenumainelementss = document.getElementById("sidemenumainelements_")
+                            var hmbrgrbarone_ = document.getElementById("hmbrgrbarone");
+                            var hmbrgrbartwo_ = document.getElementById("hmbrgrbartwo");
+                            var hmbrgrbarthree_ = document.getElementById("hmbrgrbarthree");
+                            var sidemenulogo__ = document.getElementById("sidemenulogo_");
                             if(sidemenuclicked == false){
                                 sidemenus.style.display = "block";
-                                sidemenus.style.transition = "ease 0.3s";
-                                sidemenus.style.backgroundColor = "rgba(46, 46, 46, .6)";
-                                sidemenumainelementss.style.transition = "ease 0.6s";
-                                sidemenumainelementss.style.marginRight = "0vw"
-                                sidemenuclicked = true;
+                                sidemenus.style.width = "100vw";
+                                sidemenus.style.height = "100vh";
+                                setTimeout(() => {
+                                    sidemenus.style.transition = "ease 0.3s";
+                                    sidemenus.style.backgroundColor = "rgba(46, 46, 46, .6)";
+                                    sidemenumainelementss.style.transition = "ease 0.6s";
+                                    sidemenumainelementss.style.marginRight = "0vw";
+                                    hmbrgrbartwo_.style.transition = "ease 0.1s";
+                                    hmbrgrbarone_.style.transition = "ease 0.1s";
+                                    hmbrgrbarthree_.style.transition = "ease 0.1s";
+                                    hmbrgrbarone_.style.top = "43%";
+                                    hmbrgrbarthree_.style.top = "43%";
+                                }, "1");
+                                setTimeout(() => {
+                                    hmbrgrbartwo_.style.transition = "ease 0.3s";
+                                    hmbrgrbarone_.style.transition = "ease 0.5s";
+                                    hmbrgrbarthree_.style.transition = "ease 0.3s";
+                                    hmbrgrbartwo_.style.transform = "rotate(45deg)";
+                                    hmbrgrbarone_.style.transform = "rotate(135deg)";
+                                    hmbrgrbarthree_.style.transform = "rotate(45deg)";
+                                    sidemenuclicked = true;
+                                }, "101");
                             } else {
                                 sidemenumainelementss.style.marginRight = "-70vw"
                                 sidemenus.style.backgroundColor = "rgba(46, 46, 46, 0)";
+                                hmbrgrbartwo_.style.transition = "ease 0.3s";
+                                hmbrgrbartwo_.style.transform = "rotate(0deg)";
+                                hmbrgrbarone_.style.transform = "rotate(0deg)";
+                                hmbrgrbarthree_.style.transform = "rotate(0deg)";
+                                setTimeout(() => {
+                                    sidemenus.style.width = "min(3.1cm, 17vw)";
+                                    sidemenus.style.height = "min(3.1cm, 17vw)";
+                                }, "300");
+                                setTimeout(() => {
+                                    hmbrgrbartwo_.style.transition = "ease 0.4s";
+                                    hmbrgrbarone_.style.transition = "ease 0.4s";
+                                    hmbrgrbarthree_.style.transition = "ease 0.4s";
+                                    hmbrgrbarone_.style.top = "22%";
+                                    hmbrgrbarthree_.style.top = "64%";
+                                }, "500");
                                 setTimeout(() => {
                                     sidemenumainelementss.style.transition = null;
                                     sidemenus.style.transition = null;
                                     sidemenuclicked = false;
+                                    hmbrgrbartwo_.style.transition = null;
                                 }, "600");
                             }
                         }
@@ -87,8 +129,8 @@
                     <h2>We are currently updating this section. You may <a href="https://www.collegiatecrash.com/support/" style="text-decoration: none; color: lightgrey;">click here</a> for if you still may need help.</h2>
                 </div>
                 <div style="text-align: left; margin-left: 3vw;">
-                    <h1 style="margin-left: 1vw; font-size: 4em;">Who are we?</h1>
-                    <h2 style="color: lightgrey; margin-left: 1vw;">We at Collegiate Crash are trying to provide a platform to elavate collegiate athletics on a global scale step by step</h2>
+                    <h1 style="margin-left: 3vw; font-size: 4em; margin-top: 10vh">Who are we?</h1>
+                    <h2 style="color: lightgrey; margin-left: 1vw; line-height: 1.5em; margin-right: 13vw;">We at Collegiate Crash are trying to provide a platform to elavate collegiate athletics on a global scale in a step by step manner. With our premiere selection of sports and e-sports given current relevance, popularity and a host of other variables is where we primarily intend to focus our resources to create competitive infrastructures. As methods to develop these infrastructures of our respective selection of sports and e-sports, a few ways we do so is through hosting events such as but not limited to tournaments, scrims, leagues etc. We do have plans to introduce additional sports and e-sports as we progress.</h2>
                 </div>
             </div>
                 <script>
