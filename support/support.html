@@ -1,0 +1,526 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="support.css">
+        <link rel="icon" href="Crsh_Icon_Inv.png" type="x-icon">
+    </head>
+    <title>Support | Collegiate Crash: How can we help you today?</title>
+    <body>
+        <div class="onloadpg">
+            <div id="overlay_" style="display: none;">
+                <div id="discordOverlay_" style="display: none; opacity: 0;">
+                    <button style="left: 1vw; top: 1vw; width: 3vh; height: 3vh; border: none; position: absolute; background-color: rgba(255,255,255,0.1);" onclick="discbuttonclose()"><span style="width: 80%; height: 12%; background-color:white; display: block; top: 44%; left: 10%; position: absolute; transform: rotate(45deg);"></span><span style="width: 80%; height: 12%; background-color:white; display: block; top: 44%; left: 10%; position: absolute; transform: rotate(135deg);"></span></button>
+                    <div style="margin-left: 2.5vw; max-width: 95vw; font-family: Arial, sans-serif; font-weight: bold; color: white;">
+                        <h1 style="margin-left: 2.5vw; letter-spacing: 1px;">Futher Support on Discord</h1>
+                        <hr style="border-top: dashed 2px white; border-bottom: dashed 0px white;"/>
+                        <h2 style="margin-left: 4vw; margin-right: 4vw; letter-spacing: 0px; font-weight: lighter; font-size: 1.2em; line-height: 200%; color: white">• To join our discord servers, you may visit <a href="https://www.collegiatecrash.com/join/" style="text-decoration: underline; color: white;">https://www.collegiatecrash.com/join/</a><br>• To get more personalised support, kindly open a support ticket with us in any of our discord servers under <span style="text-decoration: underline;">support/signups > #submit-a-ticket</span></h2>
+                    </div>
+                </div>
+                <div id="emailOverlay_" style="display: none; opacity: 0;">
+                    <button style="left: 1vw; top: 1vw; width: 3vh; height: 3vh; border: none; position: absolute; background-color: rgba(255,255,255,0.1);" onclick="mailbuttonclose()"><span style="width: 80%; height: 12%; background-color:white; display: block; top: 44%; left: 10%; position: absolute; transform: rotate(45deg);"></span><span style="width: 80%; height: 12%; background-color:white; display: block; top: 44%; left: 10%; position: absolute; transform: rotate(135deg);"></span></button>
+                    <div style="margin-left: 2.5vw; max-width: 95vw; font-family: Arial, sans-serif; font-weight: bold; color: white;">
+                        <h1 style="margin-left: 2.5vw; letter-spacing: 1px;">Futher Support on Email</h1>
+                        <hr style="border-top: dashed 2px white; border-bottom: dashed 0px white;"/>
+                        <h2 style="margin-left: 4vw; margin-right: 4vw; letter-spacing: 0px; font-weight: lighter; font-size: 1.2em; line-height: 200%; color: lightgray;">• Connect with us at <a href="mailto:competitor-support@collegiatecrash.com" style="text-decoration: underline; color: white;">competitor-support@collegiatecrash.com</a> for any competitive participation related inquiries or support.<br>• Unsure about the nature of support you require? Feel free to connect with us at <a href="mailto:support@collegiatecrash.com" style="text-decoration: underline; color: white;">support@collegiatecrash.com</a> for any and all inquiries and support in relation to Collegiate Crash and our team.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="menu" id="menu_">
+                <div class="menulogo">
+                    <a href="https://www.collegiatecrash.com" class="menuimglink"><embed src ="Crsh.svg" class="menuimg" style="filter: invert(100%) sepia(0%) saturate(7%) hue-rotate(132deg) brightness(103%) contrast(103%); pointer-events: none;"></a>
+                </div>
+            </div>
+            <div class="sidemenu" id="sidemenu_">
+                <div onclick="sidemenushow()" style="background-color: rgba(25, 25, 25, 0); position: absolute; width: min(3.1cm, 17vw); height: min(3.1cm, 17vw); top: 0%; right: 0%;">
+                    <div class="sidemenulogo" id="sidemenulogo_" style="width: 100%; height: 100%;">
+                        <span style="width: 60%; height: 9%; background-color:#424242; display: block; top: 22%; left: 20%; position: absolute;" id="hmbrgrbarone"></span>
+                        <span style="width: 60%; height: 9%; background-color:#424242; display: block; top: 43%; left: 20%; position: absolute;" id="hmbrgrbartwo"></span>
+                        <span style="width: 60%; height: 9%; background-color:#424242; display: block; top: 64%; left: 20%; position: absolute;" id="hmbrgrbarthree"></span>
+                    </div>
+                </div>
+                <div class="sidemenumainelements" id="sidemenumainelements_">
+                    <div class="menuelements" id="menuelements_">
+                        <a href="https://m.collegiatecrash.com/" class="select" id="menu_1">HOME</a>
+                        <a href="https://m.collegiatecrash.com/news/" class="select" id="2menu_">NEWS</a>
+                        <a href="https://m.collegiatecrash.com/schedule/" class="select" id="3menu_">SCHEDULE</a>
+                        <a href="https://www.collegiatecrash.com/socials/" class="select" id="4menu_">OUR SOCIALS</a>
+                        <a href="https://m.collegiatecrash.com/watch_now/" class="select" id="5menu_">WATCH</a>
+                        <a href="https://www.collegiatecrash.com/join/" class="select" id="sixmenu_">PLAY NOW >>></a>
+                    </div>
+                </div>
+            </div>
+            <script>
+                        var sidemenuclicked = false;
+                        function sidemenushow(){
+                            var sidemenus = document.getElementById("sidemenu_")
+                            var sidemenumainelementss = document.getElementById("sidemenumainelements_")
+                            var hmbrgrbarone_ = document.getElementById("hmbrgrbarone");
+                            var hmbrgrbartwo_ = document.getElementById("hmbrgrbartwo");
+                            var hmbrgrbarthree_ = document.getElementById("hmbrgrbarthree");
+                            var sidemenulogo__ = document.getElementById("sidemenulogo_");
+                            if(sidemenuclicked == false){
+                                sidemenus.style.display = "block";
+                                sidemenus.style.width = "100vw";
+                                sidemenus.style.height = "100vh";
+                                setTimeout(() => {
+                                    sidemenus.style.transition = "ease 0.3s";
+                                    sidemenus.style.backgroundColor = "rgba(46, 46, 46, .6)";
+                                    sidemenumainelementss.style.transition = "ease 0.6s";
+                                    sidemenumainelementss.style.marginRight = "0vw";
+                                    hmbrgrbartwo_.style.transition = "ease 0.1s";
+                                    hmbrgrbarone_.style.transition = "ease 0.1s";
+                                    hmbrgrbarthree_.style.transition = "ease 0.1s";
+                                    hmbrgrbarone_.style.top = "43%";
+                                    hmbrgrbarthree_.style.top = "43%";
+                                }, "1");
+                                setTimeout(() => {
+                                    hmbrgrbartwo_.style.transition = "ease 0.3s";
+                                    hmbrgrbarone_.style.transition = "ease 0.5s";
+                                    hmbrgrbarthree_.style.transition = "ease 0.3s";
+                                    hmbrgrbartwo_.style.transform = "rotate(45deg)";
+                                    hmbrgrbarone_.style.transform = "rotate(135deg)";
+                                    hmbrgrbarthree_.style.transform = "rotate(45deg)";
+                                    sidemenuclicked = true;
+                                }, "101");
+                            } else {
+                                sidemenumainelementss.style.marginRight = "-70vw"
+                                sidemenus.style.backgroundColor = "rgba(46, 46, 46, 0)";
+                                hmbrgrbartwo_.style.transition = "ease 0.3s";
+                                hmbrgrbartwo_.style.transform = "rotate(0deg)";
+                                hmbrgrbarone_.style.transform = "rotate(0deg)";
+                                hmbrgrbarthree_.style.transform = "rotate(0deg)";
+                                setTimeout(() => {
+                                    sidemenus.style.width = "min(3.1cm, 17vw)";
+                                }, "300");
+                                setTimeout(() => {
+                                    hmbrgrbartwo_.style.transition = "ease 0.4s";
+                                    hmbrgrbarone_.style.transition = "ease 0.4s";
+                                    hmbrgrbarthree_.style.transition = "ease 0.4s";
+                                    hmbrgrbarone_.style.top = "22%";
+                                    hmbrgrbarthree_.style.top = "64%";
+                                }, "500");
+                                setTimeout(() => {
+                                    sidemenus.style.width = "min(3.1cm, 17vw)";
+                                    sidemenumainelementss.style.transition = null;
+                                    sidemenus.style.transition = null;
+                                    sidemenuclicked = false;
+                                    hmbrgrbartwo_.style.transition = null;
+                                }, "600");
+                            }
+                        }
+                    </script>
+            <div class="mainContent" id="mainContent_">
+                <h1>How can we help you today?</h1>
+                <h2>We are currently updating this section. You may <a href="#futherHelpBanner_" style="text-decoration: none; color: lightgrey;">click here</a> for if you still may need help.</h2>
+            </div>
+            <a href="https://www.collegiatecrash.com/support/guides" style="text-decoration: none;">
+                <div class="checkFAQsandGuides" id="checkFAQsandGuides_">
+                    <h1>F.A.Q.(s) and Guides</h1>
+                    <h2>= = = = = = = = = = = = = ></h2>
+                </div>
+            </a>
+            <div class="NonParticipantSupport" id="NonParticipantSupport_">
+                <h1>./ Additional Matters </h1>
+                <p style="color: #404040; max-width: 90vw; margin: 0px; margin-left: 5vw; font-size: 1.5vh;">This section isn't explictly for non-competitors or non-participant; however for more specific support regarding or related to participants/competitors kindly <a style="color: #606060; text-decoration: underline;" href="#menu_">click here.</a></p>
+                <div style="display: flex; padding-top: 30px; padding-bottom: 10vh; max-width: 80vw; margin-left: 10vw; flex-direction: column;">
+                    <h1 style="padding-top: 0px; margin: 0px; padding-bottom: 5vh; font-size: 5.2vh;">Regarding Connecting, Sponsorship and or Partnering<span style="font-size: 2.2vh; letter-spacing: 0px; font-weight: lighter; color: #808080;"><br><br>Kindly check out our </span><a href="https://www.collegiatecrash.com/connect" style="text-decoration: none; color: #afafaf; font-size: 2.2vh; letter-spacing: 0px; font-weight: lighter;">connect with us</a><span style="font-size: 2.2vh; letter-spacing: 0px; font-weight: lighter; color: #808080;"> page and or contact us at </span><a href="mailto:connect@collegiatecrash.com" style="font-size: 2.2vh; letter-spacing: 0px; font-weight: lighter; color: #afafaf;">connect@collegiatecrash.com</a></h1>
+                    <hr />
+                    <h1 style="padding-top: 5vh; margin: 0px; padding-bottom: 0px; font-size: 5.2vh;">Applying to the Collegiate Crash Team<span style="font-size: 2.2vh; letter-spacing: 0px; font-weight: lighter; color: #808080;"><br><br>Kindly check out our </span><a href="https://www.collegiatecrash.com/apply" style="text-decoration: none; color: #afafaf; font-size: 2.2vh; letter-spacing: 0px; font-weight: lighter;">apply</a><span style="font-size: 2.2vh; letter-spacing: 0px; font-weight: lighter; color: #808080;"> page and or connect with us at </span><a href="mailto:apply@collegiatecrash.com" style="font-size: 2.2vh; letter-spacing: 0px; font-weight: lighter; color: #afafaf;">apply@collegiatecrash.com</a></h1>
+                </div>
+            </div>
+            <div id="placeholderDiv" style="top: 0px; width: 100vw; height: 20px; display: none;">
+            </div>
+            <div class="futherHelpBannerWrapper" id="futherHelpBannerWrapper_">
+                <div class="futherHelpBanner" id="futherHelpBanner_">
+                    <h1 id="futherHelpBannerh1_">Having difficulties finding what you're looking for?</h1>
+                    <h2 id="futherHelpBannerh2_">Maybe getting you some more personalised support may assist you in your search. <a href="https://www.collegiatecrash.com" style="text-decoration: none; color: whitesmoke;">More info</a></h2>
+                </div>
+                <div class="futherHelpBannerButtons" id="futherHelpBannerButtons_">
+                    <button class="futherHelpBannerButton1" id="futherHelpBannerButton1_" onclick="discbuttonopen()"><svg style="height: 30px; width: 30px;" class="DiscordBtnHelpBanner1" id="DiscordBtnHelpBanner1_"><path d="M26.0015 6.9529C24.0021 6.03845 21.8787 5.37198 19.6623 5C19.3833 5.48048 19.0733 6.13144 18.8563 6.64292C16.4989 6.30193 14.1585 6.30193 11.8336 6.64292C11.6166 6.13144 11.2911 5.48048 11.0276 5C8.79575 5.37198 6.67235 6.03845 4.6869 6.9529C0.672601 12.8736 -0.41235 18.6548 0.130124 24.3585C2.79599 26.2959 5.36889 27.4739 7.89682 28.2489C8.51679 27.4119 9.07477 26.5129 9.55525 25.5675C8.64079 25.2265 7.77283 24.808 6.93587 24.312C7.15286 24.1571 7.36986 23.9866 7.57135 23.8161C12.6241 26.1255 18.0969 26.1255 23.0876 23.8161C23.3046 23.9866 23.5061 24.1571 23.7231 24.312C22.8861 24.808 22.0182 25.2265 21.1037 25.5675C21.5842 26.5129 22.1422 27.4119 22.7621 28.2489C25.2885 27.4739 27.8769 26.2959 30.5288 24.3585C31.1952 17.7559 29.4733 12.0212 26.0015 6.9529ZM10.2527 20.8402C8.73376 20.8402 7.49382 19.4608 7.49382 17.7714C7.49382 16.082 8.70276 14.7025 10.2527 14.7025C11.7871 14.7025 13.0425 16.082 13.0115 17.7714C13.0115 19.4608 11.7871 20.8402 10.2527 20.8402ZM20.4373 20.8402C18.9183 20.8402 17.6768 19.4608 17.6768 17.7714C17.6768 16.082 18.8873 14.7025 20.4373 14.7025C21.9717 14.7025 23.2271 16.082 23.1961 17.7714C23.1961 19.4608 21.9872 20.8402 20.4373 20.8402Z"></path></svg><svg class="DiscordBtnHelpBanner2" id="DiscordBtnHelpBanner2_"><path d="M41.2697 9.86615H47.8585C49.4394 9.86615 50.7878 10.1141 51.8883 10.6101C52.9887 11.1061 53.8102 11.7881 54.3527 12.6715C54.8951 13.555 55.1741 14.5624 55.1741 15.7094C55.1741 16.8253 54.8952 17.8328 54.3217 18.7472C53.7482 19.6462 52.8803 20.3746 51.7178 20.9016C50.5554 21.4286 49.1139 21.6921 47.3935 21.6921H41.2697V9.86615ZM47.316 18.6852C48.3854 18.6852 49.2069 18.4217 49.7804 17.8793C50.3539 17.3523 50.6484 16.6083 50.6484 15.6939C50.6484 14.8414 50.3849 14.1594 49.8734 13.648C49.3619 13.1365 48.587 12.873 47.5485 12.873H45.4871V18.6852H47.316Z"></path><path d="M58.9885 12.4091C60.1772 12.4091 61.1429 11.5416 61.1429 10.4717C61.1429 9.40164 60.1772 8.5343 58.9885 8.5343C57.7981 8.5343 56.8341 9.40164 56.8341 10.4717C56.8341 11.5416 57.7981 12.4091 58.9885 12.4091Z"></path><path d="M61.1429 13.741C59.8254 14.3144 58.1825 14.3299 56.8341 13.741V21.6921H61.1429V13.741Z"></path><path d="M65.4362 21.6774C64.5217 21.4449 63.7003 21.1039 62.9718 20.6389V17.8335C63.5298 18.2675 64.2582 18.6085 65.1882 18.8875C66.1181 19.1665 67.0171 19.306 67.8851 19.306C68.288 19.306 68.598 19.2595 68.7995 19.151C69.001 19.0425 69.1095 18.9185 69.1095 18.7635C69.1095 18.593 69.0475 18.4535 68.939 18.345C68.8305 18.2365 68.6135 18.1435 68.288 18.0505L66.2576 17.6011C65.0952 17.3376 64.2737 16.9501 63.7777 16.4851C63.2818 16.0201 63.0493 15.3847 63.0493 14.6097C63.0493 13.9587 63.2663 13.3853 63.6847 12.9048C64.1187 12.4243 64.7232 12.0523 65.5137 11.7888C66.3041 11.5254 67.2186 11.3859 68.288 11.3859C69.2335 11.3859 70.1014 11.4789 70.8919 11.6959C71.6823 11.8973 72.3333 12.1608 72.8448 12.4708V15.1212C72.3178 14.8112 71.6979 14.5632 71.0159 14.3772C70.3184 14.1912 69.6055 14.0982 68.877 14.0982C67.823 14.0982 67.2961 14.2842 67.2961 14.6407C67.2961 14.8112 67.3736 14.9352 67.5441 15.0282C67.7146 15.1212 68.009 15.1987 68.443 15.2917L70.1324 15.6017C71.2329 15.7876 72.0543 16.1286 72.5968 16.6091C73.1393 17.0896 73.4028 17.787 73.4028 18.7325C73.4028 19.7555 72.9533 20.5769 72.0543 21.1659C71.1554 21.7704 69.8844 22.0648 68.2415 22.0648C67.2806 22.0338 66.3506 21.9098 65.4362 21.6774Z"></path><path d="M77.5891 21.3213C76.6281 20.8408 75.8842 20.2054 75.4037 19.3994C74.9077 18.5934 74.6752 17.679 74.6752 16.656C74.6752 15.6486 74.9232 14.7341 75.4347 13.9437C75.9462 13.1377 76.6901 12.5177 77.6666 12.0528C78.643 11.6033 79.821 11.3708 81.1849 11.3708C82.8743 11.3708 84.2693 11.7273 85.3852 12.4402V15.5246C84.9977 15.2611 84.5328 15.0286 84.0058 14.8736C83.4788 14.7031 82.9208 14.6256 82.3319 14.6256C81.2779 14.6256 80.472 14.8116 79.8675 15.1991C79.2785 15.5866 78.984 16.0826 78.984 16.7025C78.984 17.307 79.263 17.803 79.852 18.1905C80.4254 18.5779 81.2624 18.7794 82.3474 18.7794C82.9053 18.7794 83.4633 18.7019 84.0058 18.5314C84.5483 18.3609 85.0287 18.175 85.4162 17.927V20.9183C84.1762 21.6623 82.7348 22.0343 81.1074 22.0343C79.728 22.0343 78.5655 21.7863 77.5891 21.3213Z"></path><path d="M89.8041 21.3213C88.8276 20.8408 88.0837 20.2054 87.5722 19.3839C87.0607 18.5624 86.7972 17.648 86.7972 16.625C86.7972 15.6176 87.0607 14.7031 87.5722 13.9127C88.0837 13.1222 88.8276 12.5022 89.7886 12.0528C90.7495 11.6033 91.9119 11.3708 93.2464 11.3708C94.5794 11.3708 95.7418 11.5878 96.7028 12.0528C97.6637 12.5022 98.4077 13.1222 98.9192 13.9127C99.4306 14.7031 99.6786 15.6021 99.6786 16.625C99.6786 17.6325 99.4306 18.5624 98.9192 19.3839C98.4077 20.2054 97.6792 20.8563 96.7028 21.3213C95.7263 21.7863 94.5794 22.0343 93.2464 22.0343C91.9274 22.0343 90.7805 21.7863 89.8041 21.3213ZM94.9358 18.3299C95.3388 17.927 95.5558 17.369 95.5558 16.7025C95.5558 16.0206 95.3543 15.4936 94.9358 15.0906C94.5174 14.6876 93.9594 14.4861 93.2619 14.4861C92.5335 14.4861 91.9739 14.6876 91.5555 15.0906C91.1525 15.4936 90.9355 16.0206 90.9355 16.7025C90.9355 17.3845 91.137 17.927 91.5555 18.3299C91.9739 18.7484 92.5335 18.9499 93.2619 18.9499C93.9594 18.9344 94.5329 18.7329 94.9358 18.3299Z"></path><path d="M110.048 11.9901V15.6325C109.614 15.3535 109.056 15.214 108.374 15.214C107.475 15.214 106.777 15.493 106.297 16.0354C105.816 16.5779 105.568 17.4304 105.568 18.5773V21.6772H101.43V11.8196H105.491V14.966C105.708 13.819 106.08 12.9666 106.576 12.4241C107.072 11.8816 107.723 11.5872 108.513 11.5872C109.102 11.5872 109.614 11.7267 110.048 11.9901Z"></path><path d="M124 9.52563V21.6925H119.862V19.4761C119.505 20.3131 118.978 20.9486 118.265 21.3825C117.551 21.8165 116.667 22.0335 115.613 22.0335C114.683 22.0335 113.862 21.801 113.164 21.3515C112.467 20.9021 111.925 20.2666 111.553 19.4761C111.181 18.6702 110.995 17.7712 110.995 16.7793C110.979 15.7408 111.181 14.8109 111.599 13.9894C112.002 13.168 112.591 12.5325 113.335 12.0675C114.079 11.6025 114.931 11.37 115.892 11.37C117.861 11.37 119.18 12.2225 119.862 13.9429V9.52563H124ZM119.242 18.2517C119.66 17.8487 119.877 17.3062 119.877 16.6553C119.877 16.0198 119.676 15.5083 119.257 15.1209C118.839 14.7334 118.281 14.5319 117.582 14.5319C116.884 14.5319 116.326 14.7334 115.908 15.1364C115.489 15.5393 115.288 16.0508 115.288 16.7018C115.288 17.3527 115.489 17.8642 115.908 18.2672C116.326 18.6702 116.869 18.8717 117.566 18.8717C118.265 18.8717 118.823 18.6702 119.242 18.2517Z"></path></svg></button>
+                    <button class="futherHelpBannerButton2" id="futherHelpBannerButton2_" onclick="emailbuttonopen()"><p id="futherHelpBannerButton2p1_">Email</p></button>
+                    <script>
+                         function getPos(element) {
+                            var Rectview=element.getBoundingClientRect();
+                            return {x:Rectview.left,y:Rectview.top};
+                        }
+                        function discbuttonopen(){
+                            var buttondisitm1id = document.getElementById("DiscordBtnHelpBanner1_");
+                            var buttondisitm2id = document.getElementById("DiscordBtnHelpBanner2_");
+                            var buttondisid = document.getElementById("futherHelpBannerButton1_");
+                            var buttondmilid = document.getElementById("futherHelpBannerButton2_");
+                            var parentid = document.getElementById("futherHelpBannerWrapper_");
+                            var viewItem1 = document.getElementById("menu_");
+                            var viewItem2 = document.getElementById("mainContent_");
+                            var viewItem3 = document.getElementById("checkFAQsandGuides_");
+                            var viewItem4 = document.getElementById("NonParticipantSupport_");
+                            var placeholderDiv_ = document.getElementById("placeholderDiv");
+                            const heightwin_ = window.innerHeight;
+                            var discordOverlay_ = document.getElementById("discordOverlay_")
+                            buttondisid.disabled = true;
+                            buttondmilid.disabled = true;
+                            buttondmilid.style.opacity = "0";
+                            buttondisitm1id.style.opacity = "0";
+                            buttondisitm2id.style.opacity = "0";
+                            buttondisid.style.borderRadius = "3px";
+                            viewItem1.style.display = "none";
+                            viewItem2.style.display = "none";
+                            viewItem3.style.display = "none";
+                            viewItem4.style.display = "none";
+                            placeholderDiv_.style.display = "block";
+                            var prntidinfo = parentid.getBoundingClientRect();
+                            placeholderDiv_.style.height = heightwin_ - prntidinfo.height;
+                            var overlayid = document.getElementById("overlay_");
+                            var futherHelpBannerh1_ = document.getElementById("futherHelpBannerh1_");
+                            var futherHelpBannerh2_ = document.getElementById("futherHelpBannerh2_");
+                            futherHelpBannerh1_.style.transition = "ease-out 0.3s";
+                            futherHelpBannerh1_.style.opacity = "0";
+                            futherHelpBannerh2_.style.transition = "ease-out 0.3s";
+                            futherHelpBannerh2_.style.opacity = "0";
+                            overlayid.style.display = "initial";
+                            var sidemenu__ = document.getElementById("sidemenu_");
+                            sidemenu__.style.transition = "ease-out 0.5s";
+                            sidemenu__.style.opacity = "0";
+                            setTimeout(() => {
+                                var btntempposy = getPos(buttondisid).y;
+                                var btntempposx = getPos(buttondisid).x;
+                                console.log(btntempposx);
+                                overlayid.style.transition = null;
+                                overlayid.style.position = "absolute";
+                                overlayid.style.marginTop = btntempposy;
+                                overlayid.style.marginLeft = btntempposx;
+                                overlayid.style.height = "3em";
+                                overlayid.style.width = "11em";
+                                overlayid.style.borderRadius = "30px";
+                                overlayid.style.backgroundColor = "#5865F2";
+                            }, "550");
+                            setTimeout(() => {
+                                overlayid.style.transition = "ease-out 0.5s";
+                                overlayid.style.marginTop = "0px";
+                                overlayid.style.marginLeft = "0px";
+                                overlayid.style.height = "100vh";
+                                overlayid.style.width = "100vw";
+                                sidemenu__.style.display = "none";
+                            }, "560");
+                            setTimeout(() => {
+                                overlayid.style.transition = "ease-out 0.1s";
+                                overlayid.style.borderRadius = "0px";
+                                parentid.style.display = "none";
+                                discordOverlay_.style.display = "block";
+                            }, "1000");
+                            setTimeout(() => {
+                                discordOverlay_.style.transition = "ease-out 0.5s";
+                                discordOverlay_.style.opacity = "1";
+                                buttondisid.disabled = false;
+                                buttondmilid.disabled = false;
+                            }, "1100");
+                        }
+                        function discbuttonclose(){
+                            var buttondisitm1id = document.getElementById("DiscordBtnHelpBanner1_");
+                            var buttondisitm2id = document.getElementById("DiscordBtnHelpBanner2_");
+                            var buttondisid = document.getElementById("futherHelpBannerButton1_");
+                            var buttondmilid = document.getElementById("futherHelpBannerButton2_");
+                            var parentid = document.getElementById("futherHelpBannerWrapper_");
+                            var viewItem1 = document.getElementById("menu_");
+                            var viewItem2 = document.getElementById("mainContent_");
+                            var viewItem3 = document.getElementById("checkFAQsandGuides_");
+                            var viewItem4 = document.getElementById("NonParticipantSupport_");
+                            var placeholderDiv_ = document.getElementById("placeholderDiv");
+                            var prntidinfo = parentid.getBoundingClientRect();
+                            var overlayid = document.getElementById("overlay_");
+                            var futherHelpBannerh1_ = document.getElementById("futherHelpBannerh1_");
+                            var futherHelpBannerh2_ = document.getElementById("futherHelpBannerh2_");
+                            var discordOverlay_ = document.getElementById("discordOverlay_")
+                            buttondisid.disabled = true;
+                            buttondmilid.disabled = true;
+                            const heightwin_ = window.innerHeight;
+                            parentid.style.display = "block";
+                            parentid.style.opacity = "0";
+                            var btntempposy = getPos(buttondisid).y;
+                            var btntempposx = getPos(buttondisid).x;
+                            overlayid.style.position = "absolute";
+                            overlayid.style.marginTop = btntempposy;
+                            overlayid.style.marginLeft = btntempposx;
+                            overlayid.style.height = "3em";
+                            overlayid.style.width = "8em";
+                            overlayid.style.borderRadius = "30px";
+                            overlayid.style.backgroundColor = "#5865F2";
+                            overlayid.style.transition = "ease-out 0.5s";
+                            discordOverlay_.style.transition = null;
+                            discordOverlay_.style.display = "none";
+                            var sidemenu__ = document.getElementById("sidemenu_");
+                            sidemenu__.style.display = "block";
+                            setTimeout(() => {
+                                overlayid.style.display = "none";
+                                parentid.style.transition = "ease-out 0.5s";
+                                parentid.style.opacity = "1";
+                                buttondmilid.style.opacity = "1";
+                                buttondisitm1id.style.opacity = "1";
+                                buttondisitm2id.style.opacity = null;
+                                buttondisid.style.borderRadius = "1em";
+                                futherHelpBannerh1_.style.opacity = "1";
+                                futherHelpBannerh2_.style.opacity = "1";
+                                
+                            }, "550");
+                            setTimeout(() => {
+                                parentid.style.transition = "none";
+                            }, "560");
+                            setTimeout(() => {
+                                document.documentElement.style.scrollBehavior = "auto";
+                                viewItem4.style.display = "block";
+                                placeholderDiv_.style.position = "fixed";
+                                placeholderDiv_.style.backgroundColor = "#111111";
+                                placeholderDiv_.style.top = "0px";
+                                window.scrollTo(0, document.body.scrollHeight);
+                                viewItem3.style.display = "block";
+                                window.scrollTo(0, document.body.scrollHeight);
+                                viewItem2.style.display = "block";
+                                window.scrollTo(0, document.body.scrollHeight);
+                                viewItem1.style.display = "block";
+                                window.scrollTo(0, document.body.scrollHeight);
+                                sidemenu__.style.opacity = "1";
+                            }, "1050");
+                            setTimeout(() => {
+                                placeholderDiv_.style.transition = "ease-out 0.4s";
+                                placeholderDiv_.style.opacity = "0";
+                                document.documentElement.style.scrollBehavior = "smooth";
+                                futherHelpBannerh1_.style.transition = null;
+                                futherHelpBannerh2_.style.transition = null;
+                                overlayid.style.transition = null;
+                            }, "1060");
+                            setTimeout(() => {
+                                placeholderDiv_.style.transition = "none";
+                                placeholderDiv_.style.display = "none";
+                                placeholderDiv_.style.opacity = "1";
+                                placeholderDiv_.style.position = null;
+                                placeholderDiv_.style.top = null;
+                                overlayid.style.height = "0px";
+                                overlayid.style.width = "0px";
+                                sidemenu__.style.transition = null;
+                                buttondisid.disabled = false;
+                                buttondmilid.disabled = false;
+                            }, "1460");
+                            setTimeout(() => {
+                                buttondisid.disabled = false;
+                                buttondmilid.disabled = false;
+                            }, "1960");
+                        }
+                        function emailbuttonopen(){
+                            var buttondisitm1id = document.getElementById("DiscordBtnHelpBanner1_");
+                            var buttondisitm2id = document.getElementById("DiscordBtnHelpBanner2_");
+                            var buttondmilid = document.getElementById("futherHelpBannerButton1_");
+                            var buttondisid = document.getElementById("futherHelpBannerButton2_");
+                            var parentid = document.getElementById("futherHelpBannerWrapper_");
+                            var viewItem1 = document.getElementById("menu_");
+                            var viewItem2 = document.getElementById("mainContent_");
+                            var viewItem3 = document.getElementById("checkFAQsandGuides_");
+                            var viewItem4 = document.getElementById("NonParticipantSupport_");
+                            var placeholderDiv_ = document.getElementById("placeholderDiv");
+                            const heightwin_ = window.innerHeight;
+                            var discordOverlay_ = document.getElementById("emailOverlay_")
+                            var futherHelpBannerButton2p1_ = document.getElementById("futherHelpBannerButton2p1_")
+                            futherHelpBannerButton2p1_.style.opacity = "0";
+                            buttondisid.disabled = true;
+                            buttondmilid.disabled = true;
+                            buttondmilid.style.opacity = "0";
+                            buttondisitm1id.style.opacity = "0";
+                            buttondisitm2id.style.opacity = "0";
+                            buttondisid.style.borderRadius = "3px";
+                            viewItem1.style.display = "none";
+                            viewItem2.style.display = "none";
+                            viewItem3.style.display = "none";
+                            viewItem4.style.display = "none";
+                            placeholderDiv_.style.display = "block";
+                            var prntidinfo = parentid.getBoundingClientRect();
+                            placeholderDiv_.style.height = heightwin_ - prntidinfo.height;
+                            var overlayid = document.getElementById("overlay_");
+                            var futherHelpBannerh1_ = document.getElementById("futherHelpBannerh1_");
+                            var futherHelpBannerh2_ = document.getElementById("futherHelpBannerh2_");
+                            futherHelpBannerh1_.style.transition = "ease-out 0.3s";
+                            futherHelpBannerh1_.style.opacity = "0";
+                            futherHelpBannerh2_.style.transition = "ease-out 0.3s";
+                            futherHelpBannerh2_.style.opacity = "0";
+                            overlayid.style.display = "initial";
+                            var sidemenu__ = document.getElementById("sidemenu_");
+                            sidemenu__.style.transition = "ease-out 0.5s";
+                            sidemenu__.style.opacity = "0";
+                            setTimeout(() => {
+                                var btntempposy = getPos(buttondisid).y;
+                                var btntempposx = getPos(buttondisid).x;
+                                console.log(btntempposx);
+                                overlayid.style.transition = null;
+                                overlayid.style.position = "absolute";
+                                overlayid.style.marginTop = btntempposy;
+                                overlayid.style.marginLeft = btntempposx;
+                                overlayid.style.height = "3em";
+                                overlayid.style.width = "11em";
+                                overlayid.style.borderRadius = "30px";
+                                overlayid.style.backgroundColor = "#191919";
+                                sidemenu__.style.display = "none";
+                            }, "550");
+                            setTimeout(() => {
+                                overlayid.style.transition = "ease-out 0.5s";
+                                overlayid.style.marginTop = "0px";
+                                overlayid.style.marginLeft = "0px";
+                                overlayid.style.height = "100vh";
+                                overlayid.style.width = "100vw";
+                            }, "560");
+                            setTimeout(() => {
+                                overlayid.style.transition = "ease-out 0.1s";
+                                overlayid.style.borderRadius = "0px";
+                                parentid.style.display = "none";
+                                discordOverlay_.style.display = "block";
+                            }, "1000");
+                            setTimeout(() => {
+                                discordOverlay_.style.transition = "ease-out 0.5s";
+                                discordOverlay_.style.opacity = "1";
+                                buttondisid.disabled = false;
+                                buttondmilid.disabled = false;
+                            }, "1100");
+                        }
+                        function mailbuttonclose(){
+                            var buttondisitm1id = document.getElementById("DiscordBtnHelpBanner1_");
+                            var buttondisitm2id = document.getElementById("DiscordBtnHelpBanner2_");
+                            var buttondmilid = document.getElementById("futherHelpBannerButton1_");
+                            var buttondisid = document.getElementById("futherHelpBannerButton2_");
+                            var parentid = document.getElementById("futherHelpBannerWrapper_");
+                            var viewItem1 = document.getElementById("menu_");
+                            var viewItem2 = document.getElementById("mainContent_");
+                            var viewItem3 = document.getElementById("checkFAQsandGuides_");
+                            var viewItem4 = document.getElementById("NonParticipantSupport_");
+                            var placeholderDiv_ = document.getElementById("placeholderDiv");
+                            var prntidinfo = parentid.getBoundingClientRect();
+                            var overlayid = document.getElementById("overlay_");
+                            var futherHelpBannerh1_ = document.getElementById("futherHelpBannerh1_");
+                            var futherHelpBannerh2_ = document.getElementById("futherHelpBannerh2_");
+                            var discordOverlay_ = document.getElementById("emailOverlay_")
+                            var futherHelpBannerButton2p1_ = document.getElementById("futherHelpBannerButton2p1_")
+                            buttondisid.disabled = true;
+                            buttondmilid.disabled = true;
+                            const heightwin_ = window.innerHeight;
+                            parentid.style.display = "block";
+                            parentid.style.opacity = "0";
+                            var btntempposy = getPos(buttondisid).y;
+                            var btntempposx = getPos(buttondisid).x;
+                            overlayid.style.position = "absolute";
+                            overlayid.style.marginTop = btntempposy;
+                            overlayid.style.marginLeft = btntempposx;
+                            overlayid.style.height = "3em";
+                            overlayid.style.width = "8em";
+                            overlayid.style.borderRadius = "30px";
+                            overlayid.style.backgroundColor = "#191919";
+                            overlayid.style.transition = "ease-out 0.5s";
+                            discordOverlay_.style.transition = null;
+                            discordOverlay_.style.display = "none";
+                            var sidemenu__ = document.getElementById("sidemenu_");
+                            sidemenu__.style.display = "block";
+                            setTimeout(() => {
+                                overlayid.style.display = "none";
+                                parentid.style.transition = "ease-out 0.5s";
+                                parentid.style.opacity = "1";
+                                buttondmilid.style.opacity = "1";
+                                buttondisitm1id.style.opacity = "1";
+                                buttondisitm2id.style.opacity = null;
+                                buttondisid.style.borderRadius = "1em";
+                                futherHelpBannerh1_.style.opacity = "1";
+                                futherHelpBannerh2_.style.opacity = "1";
+                                futherHelpBannerButton2p1_.style.opacity = "1";
+                            }, "550");
+                            setTimeout(() => {
+                                parentid.style.transition = "none";
+                            }, "560");
+                            setTimeout(() => {
+                                document.documentElement.style.scrollBehavior = "auto";
+                                viewItem4.style.display = "block";
+                                placeholderDiv_.style.position = "fixed";
+                                placeholderDiv_.style.backgroundColor = "#111111";
+                                placeholderDiv_.style.top = "0px";
+                                window.scrollTo(0, document.body.scrollHeight);
+                                viewItem3.style.display = "block";
+                                window.scrollTo(0, document.body.scrollHeight);
+                                viewItem2.style.display = "block";
+                                window.scrollTo(0, document.body.scrollHeight);
+                                viewItem1.style.display = "block";
+                                window.scrollTo(0, document.body.scrollHeight);
+                                sidemenu__.style.opacity = "1";
+                            }, "1050");
+                            setTimeout(() => {
+                                placeholderDiv_.style.transition = "ease-out 0.4s";
+                                placeholderDiv_.style.opacity = "0";
+                                document.documentElement.style.scrollBehavior = "smooth";
+                                futherHelpBannerh1_.style.transition = null;
+                                futherHelpBannerh2_.style.transition = null;
+                                overlayid.style.transition = null;
+                            }, "1060");
+                            setTimeout(() => {
+                                placeholderDiv_.style.transition = "none";
+                                placeholderDiv_.style.display = "none";
+                                placeholderDiv_.style.opacity = "1";
+                                placeholderDiv_.style.position = null;
+                                placeholderDiv_.style.top = null;
+                                sidemenu__.style.transition = null;
+                                overlayid.style.height = "0px";
+                                overlayid.style.width = "0px";
+                            }, "1460");
+                            setTimeout(() => {
+                                buttondisid.disabled = false;
+                                buttondmilid.disabled = false;
+                            }, "1960");
+                        }
+                    </script>
+                </div>
+            </div>
+                <script>
+                    var onload_ = document.getElementById("preloadpg");
+                    onload_.style.transition = "opacity 700ms"
+                    window.addEventListener("load", function(){
+                        setTimeout(function(){
+                            onload_.style.opacity='0';
+                        }, 400)
+                        setTimeout(function(){
+                            onload_.style.display="none";
+                        }, 1100)
+                    })
+                    const region_codes = ['JP','KR','ID','SG','MY','VN','TH'];
+                    const region_header = ['注意:このサイトは現在メンテナンス中です',
+                    '알림: 이 사이트는 현재 유지 관리 중입니다',
+                    'Perhatikan: Situs ini sedang dalam pemeliharaan']
+                    const region_footer = ['サイトは、この間、意図したとおりに機能しない可能性があります, 当面の間、ソーシャルメディアプラットフォームを自由に探索してください. あなたの忍耐は高く評価されます。',
+                    '이 사이트는 당분간 의도한 대로 작동하지 않을 수 있습니다. 당분간은 소셜 미디어 플랫폼을 자유롭게 탐색하십시오.양해해 주셔서 감사해요.',
+                    'Situs ini mungkin tidak berfungsi sebagaimana dimaksud untuk saat ini, jangan ragu untuk menjelajahi sosial kami untuk saat ini. Kesabaran Anda dihargai.']
+                    let user_region = '';
+                    let region_index = -1;
+                    fetch('http://ip-api.com/json/?fields=61439')
+                        .then(res => res.json())
+                        .then(res => {
+                            user_region = res.countryCode;
+                            let len = region_codes.length;
+                            for (let x=0; x<len;x++){
+                                if (region_codes[x] == user_region){
+                                    region_index = x;
+                                }
+                            }
+                            if(region_index != -1){
+                                let ht = document.getElementById("n1");
+                                let ft = document.getElementById("n2");
+                                if (region_index < 3){
+                                    ht.textContent = region_header[region_index]
+                                    ft.textContent = region_footer[region_index]
+                                }
+                            }
+                        })
+                    
+                </script>
+            </div>
+            <div class="notice">
+                <h1 id="n1">Notice: This site is currently under maintenance</h1>
+                <p id="n2">The site may not work as intended for this while, feel free to explore <a href="https://www.collegiatecrash.com/socials/" style="text-decoration: none; color: #2e2e2e;">our socials</a> for the time being. Your patience is appreciated.</p>
+            </div>
+            <script>
+                var hone = document.getElementById('n1');
+                var htwo = document.getElementById('n2');
+                hone.style.transition = 'all 700ms';
+            </script>
+        </div>
+    </body>
+</html>
