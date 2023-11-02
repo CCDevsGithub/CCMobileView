@@ -1,0 +1,89 @@
+<script>
+    const region_codes = ['JP','KR','ID','SG','MY','VN','TH'];
+    fetch('http://ip-api.com/json/?fields=61439')
+        .then(res => res.json())
+        .then(res => {
+            user_region = res.countryCode;
+            let len = region_codes.length;
+            for (let x=0; x<len;x++){
+                if (region_codes[x] == user_region){
+                    region_index = x;
+                }
+            }
+            if(region_index != -1){
+                if (region_index < 3){
+                    window.location = "./" + region_codes[region_index].toLowerCase() + "/404/index.html";
+                }
+            }
+        })
+</script>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="watch_now.css">
+        <link rel="icon" href="https://www.collegiatecrash.com/Crsh_Icon_Inv.png" type="x-icon">
+    </head>
+    <title>Watch Now | Collegiate Crash</title>
+    <body>
+        <div class="onloadpg" style="overflow-x: hidden;">
+            <div class="menu">
+                <div class="menulogo" id="menulogo_">
+                    <a href="https://www.collegiatecrash.com" class="menuimglink"><embed src ="https://www.collegiatecrash.com/Crsh.svg" class="menuimg" style="filter: invert(80%) sepia(0%) saturate(7%) hue-rotate(132deg) brightness(103%) contrast(103%); pointer-events: none;"></a>
+                </div>
+                <div style="position: relative;">
+                    <h1 id="hone_">| We aren't live yet, check out our schedule for upcoming streams.</h1>
+                </div>
+            </div>
+            <div class="schedule">
+                <h1>Coming up next:</h1>
+                <div style="position: absolute; width: 100vw; height: min(3.0cm, 12vh); top: 0.8cm; min-height: 2cm; overflow: hidden;">
+                    <h2>Nothing Scheduled For Now</h2>
+                </div>
+                <script>
+                    var menulogoid = document.getElementById("menulogo_");
+                    var h2id = document.getElementById("hone_");
+                    var tempwidth = (h2id.clientWidth + 1)
+                    menulogoid.style.transition = "ease 1.3s";
+                    h2id.style.transition = "ease-out 2s";
+                    setTimeout(() => {
+                        menulogoid.style.left = "calc(50% - 189px - 0.3cm)";
+                    }, "1000");
+                    setTimeout(() => {
+                        h2id.style.opacity = "1";
+                    }, "1500");
+                </script>
+            </div>
+            <div class="mainContent">
+                <div class="mainframestream">
+                    <div class="mainframestreamwrapper">
+                        <iframe style="z-index: 3;" src="https://player.twitch.tv/?channel=collegiatecrash&parent=www.collegiatecrash.com" frameborder="0" allowfullscreen="true" scrolling="no" height="100%" width="100%"></iframe>
+                        <div class="bordervid">
+                            <span style="width: 5px; height: 4vh; background-color:#424242; display: block; top: calc(0.8cm + max(min(3.0cm, 12vh), 2cm) + 20px); left: 20px; position: absolute;"></span>
+                            <span style="width: 3vw; height: 5px; background-color:#424242; display: block; top: calc(0.8cm + max(min(3.0cm, 12vh), 2cm) + 20px); left: 20px; position: absolute;"></span>
+                            <span style="width: 5px; height: 4vh; background-color:#424242; display: block; top: calc(0.8cm + max(min(3.0cm, 12vh), 2cm) + 20px); left: calc((100vh - 0.8cm - max(min(3.0cm, 12vh), 2cm) - 38px - 3em)*1.7777 - 30px - 26.11px); position: absolute;"></span>
+                            <span style="width: 3vw; height: 5px; background-color:#424242; display: block; top: calc(0.8cm + max(min(3.0cm, 12vh), 2cm) + 20px); left: calc((100vh - 0.8cm - max(min(3.0cm, 12vh), 2cm) - 38px - 3em)*1.7777 - 30px - 26.11px - 3vw); position: absolute;"></span>
+                            <span style="width: 5px; height: 4vh; background-color:#424242; display: block; bottom: calc(20px + 3em + 37px); left: 20px; position: absolute;"></span>
+                            <span style="width: 3vw; height: 5px; background-color:#424242; display: block; bottom: calc(20px + 3em + 37px); left: 20px; position: absolute;"></span>
+                            <span style="width: 5px; height: 4vh; background-color:#424242; display: block; bottom: calc(20px + 3em + 37px); left: calc((100vh - 0.8cm - max(min(3.0cm, 12vh), 2cm) - 38px - 3em)*1.7777 - 30px - 26.11px); position: absolute;"></span>
+                            <span style="width: 3vw; height: 5px; background-color:#424242; display: block; bottom: calc(20px + 3em + 37px); left: calc((100vh - 0.8cm - max(min(3.0cm, 12vh), 2cm) - 38px - 3em)*1.7777 - 30px - 26.11px - 3vw); position: absolute;"></span>     
+                        </div>
+                    </div>
+                </div>
+                <div class="maininfo">
+                    <h1 style="margin-left: 1em; margin-right: 1em;">Current Leaderboard:</h1>
+                    <h2 style="margin-left: 1.5em; margin-right: 1.5em;">Looks like there are no stats to show currently.</h2>
+                </div>
+            </div>
+            <div class="notice" id="notice_">
+                <h1 id="n1">Notice: This site is currently under maintenance</h1>
+                <p id="n2">The site may not work as intended for this while, feel free to explore <a href="https://www.collegiatecrash.com/socials/" style="text-decoration: none; color: #2e2e2e;">our socials</a> for the time being. Your patience is appreciated.</p>
+            </div>
+            <script>
+                var hone = document.getElementById('n1');
+                var htwo = document.getElementById('n2');
+                hone.style.transition = 'all 700ms';
+            </script>
+        </div>
+    </body>
+</html>
